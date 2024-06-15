@@ -1,0 +1,173 @@
+{
+  "main": {
+    "id": "2025a7978c98fb5f",
+    "type": "split",
+    "children": [
+      {
+        "id": "f2cbdfeaf80b74f4",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "e4fa85a0ef7a5d08",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Welcome.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "f393c269f6f57dc1",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "SW Testing.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ],
+        "currentTab": 1
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "5225c0bcee6aef72",
+    "type": "split",
+    "children": [
+      {
+        "id": "898d6f9a430ead8f",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "8c3424f04497ec56",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "96d53271416cd014",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "1124a7ae4f9b2442",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "5e9c1006ca33a95c",
+    "type": "split",
+    "children": [
+      {
+        "id": "8741e86a3db00564",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "eeefab6b13b69f8d",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "SW Testing.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "5357ce6942e51fc2",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "SW Testing.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "a783ed8c2a53a7ca",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "f275e884d869b62a",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "SW Testing.md"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:퀵 스위처 열기": false,
+      "graph:그래프 뷰 열기": false,
+      "canvas:새 캔버스 만들기": false,
+      "daily-notes:오늘의 데일리 노트 열기": false,
+      "templates:템플릿 삽입": false,
+      "command-palette:명령어 팔레트 열기": false
+    }
+  },
+  "active": "f393c269f6f57dc1",
+  "lastOpenFiles": [
+    "Pasted image 20240615230001.png",
+    "Pasted image 20240615225938.png",
+    "Pasted image 20240615225450.png",
+    "Pasted image 20240615225435.png",
+    "Pasted image 20240615224731.png",
+    "Pasted image 20240615223628.png",
+    "Welcome.md",
+    "SW Testing.md"
+  ]
+}

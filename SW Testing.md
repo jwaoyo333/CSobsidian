@@ -1,29 +1,29 @@
-- SW 테스팅이란
-	- Software의 오류를 검사하는 두 가지 방법 : 1.Inspection 2.Testing 
+- **SW 테스팅이란**
+	- Software의 **오류를 확인**하는 두 가지 방법 : 1.Inspection 2.Testing 
 		-Inspection은 static analysis. code를 분석함(개발 과정 내내 가능함, DB, model, requirements에도 적용 가능)
 		-Testing은 dynamic analysis. 실제 프로그램을 돌리며, 버그를 확인(실행버전 있어야 함, 프로그램에만 적용가능)
-	- 필요성 : SW가 실생활에 밀접하게 연결되면서, SW 오류 발생시 막대한 피해 발생
+	- **필요성** : SW가 실생활에 밀접하게 연결되면서, SW 오류 발생시 막대한 피해 발생
 		- ex)therac-25 , Nationcal Cancer Institute 방사능 피폭 사고 등
 	- Testing은 크게 BlackBox/WhiteBox . Verification/Validation(V&V)로 나눌 수 있음
-	- SW 테스팅 절차
+	- **SW 테스팅 절차**
 		- TestCase를 만듦(Test 비용의 80%)->execution by tool ->Comparison,Analysis
-	- 진행 과정
+	- **진행 과정**
 		- Unit Testing - Integration Testing - System Testing - Release Testing - Acceptance Testing
 		- 이 중 Unit~System은 Verification, Release~Acceptance는 Validation이라 볼 수 있음
 		- Verificaion은 주로 개발팀 내부에서 defect testing 용도로. Validation은 CS팀, 유저 등 개발팀 외부에서 requirements나 needs 충족 여부를 검사함
-- Program Testing
-1. Unit Testing
+- **Program Testing**
+1. **Unit Testing**
 	1. 개요 : 프로그램의 기본이 되는 단위(class, module, function 단위의 테스트를 말함)
 	2. 목적 : 각 요소의 완성도가 주된 평가 대상. defect find
 	3. 전략 : Brricade module, clean Area 구분
 	4. Test Case 생성 전략 : Code based(Structural,White Box) / Spec Base(Black box, functional)
-	5. Spec Based Testing
+	5. **Spec Based Testing**
 		1. 특징 : black box testing.
 		2. 장점 : 
 			1. 코드 생성 이전에도 TestCase를 만들 수 있음 ->TDD와 찰떡궁합
 			2. 코드가 수정되더라도 TestCase를 수정할 필요가 없음
 		3. 종류 : Boundary Value Testing / Equivalence Testing / Decision Table Testing
-			1. Boundary Value Testing : Input Domain의 변수 영역을 활용함
+			1. **Boundary Value Testing** : Input Domain의 변수 영역을 활용함
 				1. Normal Boundary Value
 					- 가장 일반적인 Boundary Value Testing의 형태.
 					- 변수 간 관계가 독립적이라 가정하며, 경계값과 그 근처 값을 주로 Test Input으로 삼음
@@ -36,7 +36,7 @@
 				4. Robust Worst-case Boundary Value
 					- 변수간 관계 의존성 O / 비정상적 Input 포함 O
 					- 비정상, 정상, 경계값, 경계근처 4가지 경우의 수를 조합하여 설정(4*4)
-			2. Equivalance Testing : 비슷한 결과를 가져오는 input들을 묶어서 class 단위로 하나만. why? 중복을 피하기 위하여(eg. 모듈러 연산 if %5의 경우 5가지 class)
+			2. **Equivalance Testing** : 비슷한 결과를 가져오는 input들을 묶어서 class 단위로 하나만. why? 중복을 피하기 위하여(eg. 모듈러 연산 if %5의 경우 5가지 class)
 				1. Traditional Equivalance Testing
 					- valid, invalid 등 모든 범주에서 class 당 하나씩만 뽑아서 testing
 				2. Strong/Weak Equivalance Testing
@@ -46,20 +46,20 @@
 				3. Strong/Weak Robust Equivalance
 					- 비정상 범위 역시 Input의 범주.
 					- Strong이면 의존성 있고, Weak면 의존성 없는 경우
-			3. Decision Table Based Testing
+			3. **Decision Table Based Testing**
 				1. 행위의 수행 조건에 따라 적은 decision table을 활용, Test Case를 추출하는 전략, 복잡한 논리구조 파악
 				2. 품이 많이 들지만, 결과물의 품질은 아주 훌륭함
 				3. Impossible case는 테스트 불필요
 		4. testing effort
 			1. ![[Pasted image 20240615224731.png]]
 		2. .
-	6. Code Based Testing
+	6. **Code Based Testing**
 		1. 특징 : White Box Testing, Structural Testing이라고도 함
 		2. 장점 : 
 			1. 코드 생성 이전에도 TestCase를 만들 수 있음 ->TDD와 찰떡궁합
 			2. 코드가 수정되더라도 TestCase를 수정할 필요가 없음
 		3. 종류 : PathBasedTesting / Data flow testing / slicing
-			1. Control Flow Graph : Code Based Testng의 기본이 되는 그래프. Node(basic Block), Edge로 구성되어 있으며 DU, branch등에 대한 설명이 추가되기도 함. CFG를 기반으로 Coverage를 정하는 게 code based Generating의 특징임. 다만, condition이 하나씩만 쓰인 조건문은 모든 커버리지가 일치함
+			1. **Control Flow Graph** : path Based Testng의 기본이 되는 그래프. Node(basic Block), Edge로 구성되어 있으며 DU, branch등에 대한 설명이 추가되기도 함. CFG를 기반으로 Coverage를 정하는 게 code based Generating의 특징임. 다만, condition이 하나씩만 쓰인 조건문은 모든 커버리지가 일치함
 				1. Statement Coverage
 					- 모든 문장을 적어도 한 번 체크하는 커버리지.
 					- TDD 구성시 쉽게 충족 가능
@@ -77,7 +77,7 @@
 					- 다른 조건식과 독립적 개별 조건식이 전체에 영향을 주는 경우를 골라내는 기법.
 					- 안전이 중요한 방산, 자동차, 의 업계에서 주로 사
 					- eg)or의 경우 유니크 path인 FF에서 하나씩 바꿨을 때 결과인 TF,FT를 모두 추가 / and의 경우 유니크 path인 TT에서 컨디션을 바꿨을 때 결과가 바뀌는 FT, TF를 추가.
-			2. data-flow testing : Def - Use간의 관계를 통해 Data Flow를 테스트하는 방식. Data flow 관점에서 꼭 체크해야 하는 부분을 나타냄. 일반적으로 CFG보다 많은 비용이 들어감
+			2. **data-flow testing** : Def - Use간의 관계를 통해 Data Flow를 테스트하는 방식. Data flow 관점에서 꼭 체크해야 하는 부분을 나타냄. 일반적으로 CFG보다 많은 비용이 들어감
 				1. Def : 변수에 새로 값이 할당되거나 formal parameter로 사용될 때. Use : 변수가 실인자, 피연산자로 사용될 때
 				2. 조건 :
 					1. 한 Statement에서 Def-Use가 일어날 경우. 그건 다른 곳에 영향이 없기에 DU pair가 아님.
@@ -85,10 +85,10 @@
 					3. Def와 Use 사이 새로운 Def가 있을 경우는 제
 				3. 계층
 					1. ![[Pasted image 20240615223628.png]]
-			3. Slice based testing
+			3. **Slice based testing**
 				1. 기능의 실행 시 꼭 필요한 파트들만 나누어 확인하는 전략.
 		4. numbers of test case
-	7. SW testing Technique
+	7. **SW testing Technique**
 		1. Regression Testing : change 발생시 영향을 체크하는 테스트
 		2. Conformance Testing : requirements나 constrain등 충족 여부 테스트
 		3. Random Testing : T.C를 만들지 않고, Input을 랜덤으로. 시스템의 critical point 확인이 목적
@@ -116,6 +116,7 @@
 					1. ![[Pasted image 20240615225938.png]]
 					2. ![[Pasted image 20240615230001.png]]
 2. Integration Testing
+	1. 
 3. System Testing
 4. Embedded Testing
 

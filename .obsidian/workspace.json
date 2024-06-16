@@ -30,9 +30,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "38e7f49dd6a55100",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "AI(from Reinforcement Learning).md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -98,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "SW Testing.md",
+                "file": "AI(from Reinforcement Learning).md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "SW Testing.md",
+                "file": "AI(from Reinforcement Learning).md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "SW Testing.md"
+                "file": "AI(from Reinforcement Learning).md"
               }
             }
           }
@@ -159,15 +171,21 @@
       "command-palette:명령어 팔레트 열기": false
     }
   },
-  "active": "f393c269f6f57dc1",
+  "active": "38e7f49dd6a55100",
   "lastOpenFiles": [
-    "Pasted image 20240615230001.png",
-    "Pasted image 20240615225938.png",
-    "Pasted image 20240615225450.png",
-    "Pasted image 20240615225435.png",
-    "Pasted image 20240615224731.png",
-    "Pasted image 20240615223628.png",
-    "Welcome.md",
-    "SW Testing.md"
+    "Pasted image 20240616142645.png",
+    "Pasted image 20240616142620.png",
+    "Pasted image 20240616142218.png",
+    "Pasted image 20240616141617.png",
+    "Pasted image 20240616141530.png",
+    "Pasted image 20240616141434.png",
+    "Pasted image 20240616141132.png",
+    "Pasted image 20240616140812.png",
+    "Pasted image 20240616140755.png",
+    "Pasted image 20240616140544.png",
+    "Pasted image 20240616140310.png",
+    "SW Testing.md",
+    "AI(from Reinforcement Learning).md",
+    "Welcome.md"
   ]
 }
